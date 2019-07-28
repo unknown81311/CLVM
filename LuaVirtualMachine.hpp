@@ -51,7 +51,7 @@ namespace VMOffsets {
 #define BASE 20
 #define TOP 8
 
-void Convert(lua_State* Lua, DWORD Roblox, int SomeValueLOL) {
+void Convert(lua_State* Lua, DWORD Roblox, int SavedCalls) {
 	lua_assert(isLua(Lua->ci));
 	VMOffsets::VmInstr = Lua->savedpc;
 	VMOffsets::VmClosure = &clvalue(Lua->ci->func)->l;
